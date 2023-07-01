@@ -1,8 +1,6 @@
 import 'package:logging/logging.dart';
 
-class HrkLevel extends Level {
-  const HrkLevel(super.name, super.value);
-
+class HrkLevel {
   // ignore: constant_identifier_names
   static const Level DEBUG = Level('DEBUG', 600);
 

@@ -7,7 +7,7 @@ void main() {
   final String name = 'HrkLogger';
 
   group('HrkLogging Test', () {
-    test('Assert HrkLevel', () {
+    test('HrkLevel', () {
       HrkLevel.LEVELS.contains(HrkLevel.DEBUG);
     });
 
