@@ -26,7 +26,7 @@ Colorful logs by HRK
 ## Getting started
 
 ```console
-flutter pub add 'hrk_logging:{"git":{"url":"https://github.com/hrishikesh-kadam/space_data_explorer","ref":"dev","path":"packages/hrk_logging"}}'
+dart pub add 'hrk_logging:{"git":"https://github.com/hrishikesh-kadam/hrk_logging.dart"}'
 ```
 
 ## Usage
