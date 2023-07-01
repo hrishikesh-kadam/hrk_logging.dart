@@ -22,3 +22,5 @@ dart pub global run coverage:format_coverage \
   --check-ignore
 
 lcov --list coverage/lcov.info
+
+git status -s
