@@ -4,4 +4,5 @@
 
 - Screenshots
 - Codecov graph token
+- Export statements
 - Dependabot

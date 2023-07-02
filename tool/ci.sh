@@ -2,6 +2,8 @@
 
 set -e -o pipefail
 
+dart pub get
+
 dart format --output none --set-exit-if-changed .
 
 dart analyze
