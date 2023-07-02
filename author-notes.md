@@ -2,6 +2,6 @@
 
 ## TODOs
 
-- CI scripts
 - Screenshots
-- Coverage badge
+- Codecov graph token
+- Dependabot

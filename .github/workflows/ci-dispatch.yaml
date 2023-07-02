@@ -1,0 +1,46 @@
+name: ci-dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      runner:
+        description: 'Runner OS'
+        required: true
+        default: 'ubuntu-latest'
+        type: choice
+        options:
+          - 'ubuntu-latest'
+          - 'macos-latest'
+          - 'windows-latest'
+          - 'macos-13'
+      sdk:
+        description: 'Dart channel, version or git reference'
+        required: true
+        default: 'stable'
+        type: choice
+        options:
+          - 'stable'
+          - 'beta'
+          - 'dev'
+          - 'main'
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  ci-dispatch:
+    name: CI Dispatched on ${{ inputs.runner }} using Dart ${{ inputs.sdk }}
+    runs-on: ${{ inputs.runner }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: ${{ inputs.sdk }}
+      - run: ./tool/prerequisite.sh
+      - run: ./tool/ci.sh
+      - uses: codecov/codecov-action@v3
+        with:
+          files: coverage/lcov.info
+          name: ci-dispatch-${{ inputs.runner }}-${{ inputs.sdk }}

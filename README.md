@@ -11,6 +11,9 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
+[![ci](https://github.com/hrishikesh-kadam/hrk_logging.dart/actions/workflows/ci.yml/badge.svg)](https://github.com/hrishikesh-kadam/hrk_logging.dart/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/hrishikesh-kadam/hrk_logging.dart/branch/main/graph/badge.svg)](https://codecov.io/gh/hrishikesh-kadam/hrk_logging.dart)
+
 Colorful logs by HRK
 
 ## Features
