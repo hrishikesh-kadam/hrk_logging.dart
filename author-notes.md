@@ -3,3 +3,5 @@
 ## TODOs
 
 - Screenshots
+- pana
+- README.md
