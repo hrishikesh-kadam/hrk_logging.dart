@@ -1,5 +1,6 @@
 name: hrk_logging
-description: Colorful logs by HRK
+description: >-
+  A library for beginners to quickly add colors and emojis to logs
 repository: https://github.com/hrishikesh-kadam/hrk_logging.dart
 version: 0.1.0
 

@@ -14,13 +14,13 @@ and the Flutter guide for
 [![ci](https://github.com/hrishikesh-kadam/hrk_logging.dart/actions/workflows/ci.yaml/badge.svg)](https://github.com/hrishikesh-kadam/hrk_logging.dart/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/hrishikesh-kadam/hrk_logging.dart/branch/main/graph/badge.svg)](https://codecov.io/gh/hrishikesh-kadam/hrk_logging.dart)
 
-Colorful logs by HRK
+A library for beginners to quickly add colors and emojis to logs
 
 ## Features
 
 - Colorful Logs
 - Relevant Emojis
-- Support for log.debug()
+- Support for `log.debug()`
 - Hierarchical logging is enabled
 - Root Logger is set to `Level.ALL` in kDebugMode, else set to `Level.INFO`
 - Root Logger is set to `Level.OFF` in Dart and Flutter Test  
@@ -56,9 +56,9 @@ void main() {
 
 - This package is intended for the beginners.
 - If you find this package useful, make sure you do the following
-  - Like the original [logging][] package on pub.dev
+  - Like the original [`logging`][] package on pub.dev
   - Like this package on pub.dev
 
 
 [lib/src/helper/helper_non_web.dart]: lib/src/helper/helper_non_web.dart
-[logging]: https://pub.dev/packages/logging
+[`logging`]: https://pub.dev/packages/logging

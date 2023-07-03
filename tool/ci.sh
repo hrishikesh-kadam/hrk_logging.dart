@@ -25,4 +25,7 @@ dart pub global run coverage:format_coverage \
 
 lcov --list coverage/lcov.info
 
+dart pub global activate pana
+dart pub global run pana --no-warning
+
 git status -s
