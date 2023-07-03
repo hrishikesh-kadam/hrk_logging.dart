@@ -19,7 +19,7 @@ Colorful logs by HRK
 ## Features
 
 - Colorful Logs
-- Emojis
+- Relevant Emojis
 - Support for log.debug()
 - Hierarchical logging is enabled
 - Root Logger is set to `Level.ALL` in kDebugMode, else set to `Level.INFO`
@@ -29,7 +29,7 @@ Colorful logs by HRK
 ## Getting started
 
 ```console
-dart pub add 'hrk_logging:{"git":"https://github.com/hrishikesh-kadam/hrk_logging.dart"}'
+dart pub add hrk_logging
 ```
 
 ## Usage
@@ -52,5 +52,13 @@ void main() {
 }
 ```
 
+## Additional information
+
+- This package is intended for the beginners.
+- If you find this package useful, make sure you do the following
+  - Like the original [logging][] package on pub.dev
+  - Like this package on pub.dev
+
 
 [lib/src/helper/helper_non_web.dart]: lib/src/helper/helper_non_web.dart
+[logging]: https://pub.dev/packages/logging
