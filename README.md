@@ -14,7 +14,7 @@ and the Flutter guide for
 [![ci](https://github.com/hrishikesh-kadam/hrk_logging.dart/actions/workflows/ci.yaml/badge.svg)](https://github.com/hrishikesh-kadam/hrk_logging.dart/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/hrishikesh-kadam/hrk_logging.dart/branch/main/graph/badge.svg)](https://codecov.io/gh/hrishikesh-kadam/hrk_logging.dart)
 
-A library for beginners to quickly add colors and emojis to logs
+A library for beginners to quickly add colors and emojis to logs.
 
 ## Features
 

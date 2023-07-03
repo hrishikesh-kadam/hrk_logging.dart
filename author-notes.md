@@ -2,6 +2,4 @@
 
 ## TODOs
 
-- pana
-- Screenshots
 - README.md
