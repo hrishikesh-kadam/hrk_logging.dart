@@ -6,7 +6,7 @@ dart pub get
 
 dart format --output none --set-exit-if-changed .
 
-dart analyze
+dart analyze --fatal-infos
 
 dart pub global activate coverage
 
@@ -27,5 +27,7 @@ lcov --list coverage/lcov.info
 
 dart pub global activate pana
 dart pub global run pana --no-warning
+
+dart pub publish --dry-run
 
 git status -s

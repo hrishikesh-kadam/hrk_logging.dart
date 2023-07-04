@@ -1,16 +1,15 @@
 import 'dart:async';
 
+import 'package:hrk_batteries/hrk_batteries.dart';
 import 'package:logging/logging.dart';
 
 import 'ansi_color.dart';
 import 'emoji.dart';
-import 'extension/extension.dart';
 import 'globals.dart';
 import 'level_debug.dart';
 
 export 'ansi_color.dart';
 export 'emoji.dart';
-export 'extension/extension.dart';
 export 'level_debug.dart';
 
 /// To maintain idempotency of the configureLogging()
