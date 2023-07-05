@@ -4,7 +4,7 @@ import 'package:hrk_logging/hrk_logging.dart';
 import 'package:test/test.dart';
 
 void main() {
-  final String name = 'HrkLogger';
+  const String name = 'HrkLogger';
 
   group('HrkLogging Test', () {
     test('HrkLevel', () {
