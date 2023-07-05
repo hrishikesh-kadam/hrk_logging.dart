@@ -58,8 +58,9 @@ void main() {
 - This package is intended for the beginners.
 - If you find this package useful, make sure you do the following
   - Like the original [`logging`][] package on pub.dev
-  - Like this package on pub.dev
+  - Like [this][`hrk_logging`] package on pub.dev
 
 
 [lib/src/helper/helper_non_web.dart]: lib/src/helper/helper_non_web.dart
 [`logging`]: https://pub.dev/packages/logging
+[`hrk_logging`]: https://pub.dev/packages/hrk_logging
