@@ -1,3 +1,8 @@
+## 0.1.1
+
+- Update README.md
+- Add Screenshots to README.md
+
 ## 0.1.0
 
 - Add HrkLevel.ERROR in between Level.WARNING and Level.SEVERE
