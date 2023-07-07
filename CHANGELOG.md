@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Fix markdown images for pub.dev
+
 ## 0.1.1
 
 - Update README.md

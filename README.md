@@ -16,8 +16,8 @@ A library for beginners to quickly add colors and emojis to logs.
 
 ## Screenshots
 
-![terminal_screenshot](screenshots/terminal_screenshot.png)
-![web_console_screenshot](screenshots/web_console_screenshot.png)
+![terminal_screenshot](https://github.com/hrishikesh-kadam/hrk_logging.dart/raw/main/screenshots/terminal_screenshot.png)
+![web_console_screenshot](https://github.com/hrishikesh-kadam/hrk_logging.dart/raw/main/screenshots/web_console_screenshot.png)
 
 ## Getting started
 
