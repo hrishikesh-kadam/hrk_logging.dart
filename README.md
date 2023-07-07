@@ -53,14 +53,32 @@ void main() {
 }
 ```
 
-## Additional information
+## Logging Levels in other Languages and Frameworks
 
-- This package is intended for the beginners.
+- [RFC 5424 (syslog standard)][]
+- [java.util.logging.Level][]
+- [android.util.Log][]
+- [Log4J][Log4J Logging Levels]
+- [Python][Python Logging Levels]
+- [Swift][]
+- [glog][]
+
+## Credits
+
 - If you find this package useful, make sure you do the following
   - Like the original [`logging`][] package on pub.dev
   - Like [this][`hrk_logging`] package on pub.dev
+  - Star [this][`hrk_logging.dart`] repo on GitHub
 
 
 [lib/src/helper/helper_non_web.dart]: lib/src/helper/helper_non_web.dart
+[RFC 5424 (syslog standard)]: https://datatracker.ietf.org/doc/html/rfc5424#section-6.2.1
+[java.util.logging.Level]: https://docs.oracle.com/en/java/javase/20/docs/api/java.logging/java/util/logging/Level.html
+[android.util.Log]: https://source.android.com/docs/core/tests/debug/understanding-logging
+[Log4J Logging Levels]: https://logging.apache.org/log4j/2.x/manual/customloglevels.html
+[Python Logging Levels]: https://docs.python.org/3/library/logging.html#logging-levels
+[Swift]: https://www.swift.org/server/guides/libraries/log-levels.html
+[glog]: https://github.com/google/glog#severity-levels
 [`logging`]: https://pub.dev/packages/logging
 [`hrk_logging`]: https://pub.dev/packages/hrk_logging
+[`hrk_logging.dart`]: https://github.com/hrishikesh-kadam/hrk_logging.dart

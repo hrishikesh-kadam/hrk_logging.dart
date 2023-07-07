@@ -9,6 +9,7 @@ void main() {
   group('HrkLogging Test', () {
     test('HrkLevel', () {
       HrkLevel.LEVELS.contains(HrkLevel.DEBUG);
+      HrkLevel.LEVELS.contains(HrkLevel.ERROR);
     });
 
     test('Print log', () {
@@ -16,6 +17,7 @@ void main() {
       final log = Logger(name)..level = Level.ALL;
       log.shout('sample shout');
       log.severe('sample severe');
+      log.error('sample error');
       log.warning('sample warning');
       log.info('sample info');
       log.config('sample config');
@@ -24,13 +26,14 @@ void main() {
       log.finer('sample finer');
       log.finest('sample finest');
       Logger.root.clearListeners();
+      rootLoggerSubscription = null;
     });
 
     test('Assert log', () async {
       Level level = Level.SHOUT;
       String message = 'sample ${level.toString().toLowerCase()}';
       RegExp pattern = RegExp('^$name: '
-          '${RegExp.escape('${AnsiColor.red}${Emoji.shout}')} '
+          '${RegExp.escape('${AnsiColor.brightRed}${Emoji.shout}')} '
           '${level.toString().capitalize()}: .*'
           '$message'
           '${RegExp.escape(AnsiColor.reset)}\$');
@@ -39,7 +42,16 @@ void main() {
       level = Level.SEVERE;
       message = 'sample ${level.toString().toLowerCase()}';
       pattern = RegExp('^$name: '
-          '${RegExp.escape('${AnsiColor.red}${Emoji.severe}')} '
+          '${RegExp.escape('${AnsiColor.brightRed}${Emoji.severe}')} '
+          '${level.toString().capitalize()}: .*'
+          '$message'
+          '${RegExp.escape(AnsiColor.reset)}\$');
+      await verifyLog(name, level, message, pattern);
+
+      level = HrkLevel.ERROR;
+      message = 'sample ${level.toString().toLowerCase()}';
+      pattern = RegExp('^$name: '
+          '${RegExp.escape('${AnsiColor.red}${Emoji.error}')} '
           '${level.toString().capitalize()}: .*'
           '$message'
           '${RegExp.escape(AnsiColor.reset)}\$');
@@ -66,8 +78,10 @@ void main() {
       level = Level.CONFIG;
       message = 'sample ${level.toString().toLowerCase()}';
       pattern = RegExp('^$name: '
+          '${RegExp.escape('${AnsiColor.magenta}${Emoji.config}')} '
           '${level.toString().capitalize()}: .*'
-          '$message\$');
+          '$message'
+          '${RegExp.escape(AnsiColor.reset)}\$');
       await verifyLog(name, level, message, pattern);
 
       level = HrkLevel.DEBUG;
@@ -115,6 +129,7 @@ Future<void> verifyLog(
       final log = Logger(name)..level = level;
       log.log(level, message);
       Logger.root.clearListeners();
+      rootLoggerSubscription = null;
     },
     zoneSpecification: ZoneSpecification(
       print: (self, parent, zone, line) {

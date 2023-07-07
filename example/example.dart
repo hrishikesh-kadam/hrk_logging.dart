@@ -5,6 +5,7 @@ void main() {
   final log = Logger('HrkLogger')..level = Level.ALL;
   log.shout('sample shout');
   log.severe('sample severe');
+  log.error('sample error');
   log.warning('sample warning');
   log.info('sample info');
   log.config('sample config');
