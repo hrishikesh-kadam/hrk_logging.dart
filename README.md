@@ -11,8 +11,7 @@ A library for beginners to quickly add colors and emojis to logs.
 - Support for `log.debug()` and `log.error()`
 - Hierarchical logging is enabled
 - Root Logger is set to `Level.ALL` in kDebugMode, else set to `Level.INFO`
-- Root Logger is set to `Level.OFF` in Dart and Flutter Test  
-  See [lib/src/helper/helper_non_web.dart][]
+- Root Logger is set to `Level.OFF` in Dart and Flutter Test
 
 ## Screenshots
 
@@ -64,7 +63,6 @@ void main() {
   - Star [this][`hrk_logging.dart`] repo on GitHub
 
 
-[lib/src/helper/helper_non_web.dart]: lib/src/helper/helper_non_web.dart
 [RFC 5424 (syslog standard)]: https://datatracker.ietf.org/doc/html/rfc5424#section-6.2.1
 [java.util.logging.Level]: https://docs.oracle.com/en/java/javase/20/docs/api/java.logging/java/util/logging/Level.html
 [android.util.Log]: https://source.android.com/docs/core/tests/debug/understanding-logging
