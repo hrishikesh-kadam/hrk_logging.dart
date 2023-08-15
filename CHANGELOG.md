@@ -1,6 +1,6 @@
-## 0.1.3-dev
+## 0.1.3
 
-- 
+- Fix hrk_batteries and hrk_analysis dependency
 
 ## 0.1.2
 
