@@ -44,3 +44,4 @@ jobs:
         with:
           files: coverage/lcov.info
           name: ci-dispatch-${{ inputs.runner }}-${{ inputs.sdk }}
+          token: ${{ secrets.CODECOV_TOKEN }}
