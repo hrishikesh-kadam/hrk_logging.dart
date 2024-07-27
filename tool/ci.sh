@@ -30,4 +30,5 @@ dart pub global run pana --no-warning
 
 dart pub publish --dry-run
 
-git status -s
+git diff --stat
+git diff --exit-code

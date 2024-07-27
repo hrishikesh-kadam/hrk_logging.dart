@@ -1,3 +1,7 @@
+## 0.2.0
+
+- Bump hrk_analysis, hrk_batteries to ^1.0.0
+
 ## 0.1.3
 
 - Fix hrk_batteries and hrk_analysis dependency
