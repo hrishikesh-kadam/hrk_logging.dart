@@ -21,7 +21,7 @@ void configureHrkLogging() {
   }
 
   hierarchicalLoggingEnabled = true;
-  Level level = kDebugMode ? Level.ALL : Level.INFO;
+  Level level = isDebugMode() ? Level.ALL : Level.INFO;
   Logger.root.level = dartOrFlutterTest ? Level.OFF : level;
 
   rootLoggerSubscription = Logger.root.onRecord.listen((record) {

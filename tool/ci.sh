@@ -2,7 +2,7 @@
 
 set -e -o pipefail
 
-dart pub get
+dart pub upgrade
 
 dart format --output none --set-exit-if-changed .
 
@@ -23,12 +23,12 @@ dart pub global run coverage:format_coverage \
   --lcov \
   --check-ignore
 
-lcov --list coverage/lcov.info
+lcov --list coverage/lcov.info \
+  | grep -v ".*|.*100%.*|.*|"
 
 dart pub global activate pana
 dart pub global run pana --no-warning
 
 dart pub publish --dry-run
 
-git diff --stat
-git diff --exit-code
+git diff --stat --exit-code

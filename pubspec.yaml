@@ -1,5 +1,5 @@
 name: hrk_logging
-version: 0.2.0
+version: 0.3.0
 
 description: >-
   A library for beginners to quickly add colors and emojis to logs
@@ -19,9 +19,13 @@ environment:
   sdk: ^3.0.0
 
 dependencies:
-  hrk_batteries: ^1.0.0
+  hrk_batteries: ^2.0.0
   logging: ^1.1.0
 
 dev_dependencies:
   hrk_analysis: ^1.0.0
   test: ^1.21.0
+
+# dependency_overrides:
+#   hrk_batteries:
+#     path: '../hrk_batteries'

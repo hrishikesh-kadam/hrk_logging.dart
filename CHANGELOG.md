@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Bump hrk_batteries to 2.0.0
+
 ## 0.2.0
 
 - Bump hrk_analysis, hrk_batteries to ^1.0.0
