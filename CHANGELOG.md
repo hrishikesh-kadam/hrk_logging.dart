@@ -1,3 +1,7 @@
+## 0.3.1
+
+- Fix markdown images for pub.dev
+
 ## 0.3.0
 
 - Bump hrk_batteries to 2.0.0

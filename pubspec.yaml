@@ -1,5 +1,5 @@
 name: hrk_logging
-version: 0.3.0
+version: 0.3.1
 
 description: >-
   A library for beginners to quickly add colors and emojis to logs
