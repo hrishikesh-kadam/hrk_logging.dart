@@ -1,3 +1,7 @@
+## 0.4.0-pre.1
+
+- Bump hrk_analysis to ^2.0.0
+
 ## 0.3.1
 
 - Fix markdown images for pub.dev
